@@ -10,13 +10,12 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-map <S-*> y
 map <F5> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 map <F4> :!cscope -Rbq -f ./cscope.out<CR>
 
-" On OSX
+" On RaspberryPI
 vmap <C-c> "+y
-nmap <F3> "+p
+nmap <C-w> "+p
 
 set shiftwidth=4
 set tabstop=4

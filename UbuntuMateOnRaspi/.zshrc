@@ -82,7 +82,6 @@ fi
 if [[ -z $DESKTOP_SESSION && -z $SSH_CONNECTION && -z $IN_ZHCON ]]; then
 export IN_ZHCON='YES'
 zhcon --utf8
-echo "zhcon launched."
 fi
 
 # Compilation flags
@@ -104,3 +103,5 @@ alias j='z'
 alias unlock='sudo rm /var/cache/apt/archives/lock /var/lib/dpkg/lock'
 alias vncstart='vncserver :1'
 alias vncstop='vncserver -kill :1'
+alias mk='make -j4'
+alias mc='make clean'
