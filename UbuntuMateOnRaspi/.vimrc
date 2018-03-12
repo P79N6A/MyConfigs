@@ -15,7 +15,7 @@ map <F4> :!cscope -Rbq -f ./cscope.out<CR>
 
 " On RaspberryPI
 vmap <C-c> "+y
-nmap <C-w> "+p
+nmap <F3> "+p
 
 set shiftwidth=4
 set tabstop=4
