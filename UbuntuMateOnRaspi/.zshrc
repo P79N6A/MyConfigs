@@ -105,3 +105,6 @@ alias vncstart='vncserver :1'
 alias vncstop='vncserver -kill :1'
 alias mk='make -j4'
 alias mc='make clean'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+

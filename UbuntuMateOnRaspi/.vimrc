@@ -30,12 +30,6 @@ set fileformats=unix
 set tags=./tags;../tags;tags
 set nu
 
-imap () ()<Left>
-imap [] []<Left>
-imap {} {}<Left>
-imap "" ""<Left>
-imap '' ''<Left>
-imap <> <><Left>
 imap <C-\> <ESC>A;<Enter>
 nmap <C-\> <ESC>A {}<Enter><ESC>O
 
@@ -65,3 +59,20 @@ nmap <C-@>e :cs find e <C-R>=expand("<cword>")<CR><CR>
 nmap <C-@>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-@>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+
+call plug#begin('~/.vim/plugged')
+Plug 'zivyangll/git-blame.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'haya14busa/incsearch.vim'
+Plug 'airblade/vim-gitgutter'
+
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+call plug#end()
+
+"For git-blame
+"nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
+let mapleader = ","  " map leader键设置
+let g:mapleader = ","
+
+"For vim-gitgutter
+set updatetime=500
