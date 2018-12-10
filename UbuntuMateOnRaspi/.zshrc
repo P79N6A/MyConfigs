@@ -107,4 +107,4 @@ alias mk='make -j4'
 alias mc='make clean'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
+export FZF_COMPLETION_TRIGGER='``'
