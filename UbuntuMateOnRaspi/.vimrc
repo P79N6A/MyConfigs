@@ -10,7 +10,7 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-map <F5> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <F5> :!ctags -R --c++-kinds=+p --fields=+liaS --extra=+q .<CR>
 map <F4> :!cscope -Rbq -f ./cscope.out<CR>
 
 " On RaspberryPI
@@ -66,7 +66,6 @@ Plug 'airblade/vim-gitgutter'
 
 Plug 'Valloric/YouCompleteMe'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'Valloric/YouCompleteMe'
 call plug#end()
 
 "For git-blame
@@ -79,7 +78,7 @@ set updatetime=500
 
 "For YouCompleteMe
 let g:ycm_server_python_interpreter='/usr/bin/python3'
-let g:ycm_global_ycm_extra_conf='~/.vim/plugged/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
