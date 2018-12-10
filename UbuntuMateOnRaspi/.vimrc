@@ -64,6 +64,7 @@ Plug 'zivyangll/git-blame.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 
+Plug 'Valloric/YouCompleteMe'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'Valloric/YouCompleteMe'
 call plug#end()
@@ -75,3 +76,12 @@ let g:mapleader = ","
 
 "For vim-gitgutter
 set updatetime=500
+
+"For YouCompleteMe
+let g:ycm_server_python_interpreter='/usr/bin/python3'
+let g:ycm_global_ycm_extra_conf='~/.vim/plugged/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_error_symbol = '!'
+let g:ycm_warning_symbol = '>'
