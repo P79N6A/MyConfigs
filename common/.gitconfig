@@ -1,0 +1,33 @@
+[core]
+	editor=vim
+	autocrlf = input
+[user]
+	name = badpx
+	email = badpxx@tencent.com
+[alias]
+	co = checkout
+	ci = commit
+	ca = commit -a
+	st = status
+	br = branch
+	ba = branch -a
+	mg = merge
+	df = diff
+	cm = checkout master
+	si = svn info
+	sc = svn dcommit
+	srb = svn rebase
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset' --abbrev-commit --
+[color]
+	ui = true
+[push]
+	default = simple
+[http]
+	#proxy = dev-proxy.oa.com:8080
+[commit]
+	template = ~/.stCommitMsg
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
